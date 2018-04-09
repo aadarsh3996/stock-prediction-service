@@ -21,4 +21,7 @@ from prediction_service import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^logistics/$',views.logistic_regression,name='index'),
+    url(r'^forest/$',views.random_forest,name='forest'),
+    url(r'^deep/$',views.neural_nets,name='deep'),
+
 ]
